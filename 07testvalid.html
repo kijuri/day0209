@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07testvalid.html</title>
+    <style>
+        *{font-size: 20pt;}
+            input[type=text]:invalid{
+                background-color: red;
+            }
+    </style>
+</head>
+<body>
+    <h2>07testvalid.html</h2>
+    <form action="">
+    제목 <input type="text" required value="rain"><br>
+    비번 <input type="text" pattern="[0-9a-zA-Z]{4}" placeholder="영문및숫자 4자릿수" maxlength="4"><br>
+    번호 <input type="text" pattern="^\d{3}-\d{4}-\d{4}$" placeholder="010-0000-0000"><br>
+    <input type="submit" value="확인submit">
+    <input type="reset" value="입력취소">
+</form>
+</body>
+</html>
